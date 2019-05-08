@@ -1,0 +1,15 @@
+hi ttcn3_module ctermfg=None
+hi ttcn3_type ctermfg=None
+hi ttcn3_const ctermfg=None
+hi ttcn3_template ctermfg=None
+hi ttcn3_function ctermfg=None
+hi ttcn3_signature ctermfg=None
+hi ttcn3_testcase ctermfg=None
+hi ttcn3_altstep ctermfg=None
+hi ttcn3_group ctermfg=None
+hi ttcn3_modulepar ctermfg=None
+hi ttcn3_var ctermfg=None
+hi ttcn3_timer ctermfg=None
+hi ttcn3_port ctermfg=None
+hi ttcn3_member ctermfg=None
+hi ttcn3_enum ctermfg=None
