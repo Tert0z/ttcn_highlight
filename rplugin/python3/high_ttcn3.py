@@ -1,5 +1,6 @@
 import pynvim
 import re
+import os
 
 @pynvim.plugin
 class TestPlugin(object):
@@ -25,11 +26,11 @@ class TestPlugin(object):
 
     def __init__(self, nvim):
         self.nvim = nvim
-        tags_file = open("/home/tert0z/tags")
+        tags_file = open(os.path.abspath("./tags"))
         self.tags = [[i.strip() for i in t.split("\t")]for t in tags_file.readlines()]
 
-    @pynvim.function('TestFunction')
-    def testfunction(self, filename):
+    @pynvim.function('HighlightTtcn')
+    def highlight_ttcn(self, filename):
         file = open(filename[0], "r").readlines()
 
         target_files = self._get_imported_files(file)
